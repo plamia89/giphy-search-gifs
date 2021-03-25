@@ -1,0 +1,92 @@
+@import "src/styles/_variables";
+@import "src/styles/_grid_mixins";
+@import "~@accelya/sdk/mcf-theme/scss/mcf-theme";
+
+.gif-content-header {
+  padding-top: 4rem;
+  .gif-search-bar-title {
+    color: $white_color_text;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.375rem;
+    font-family: myriad-pro, sans-serif;
+  }
+
+  @include col-bp-md-min {
+    padding-top: 2rem;
+  }
+
+  .search-gif-input-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .small-text-header {
+    font-size: 1.125rem;
+    color: $white_color_text;
+    text-align: center;
+    font-family: myriad-pro, sans-serif;
+  }
+
+  .large-text-header {
+    font-size: 1.5rem;
+    color: $white_color_text;
+    text-align: center;
+    font-family: myriad-pro, sans-serif;
+    padding-top: 2rem;
+  }
+
+  .show-all-options {
+    max-height: 4rem;
+    color: #c0cad0;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    cursor: pointer;
+    background: #dfedf7;
+    opacity: 1;
+  }
+
+  .show-all-options:after {
+    padding-right: 2rem;
+  }
+
+  .search-button {
+    max-height: 4rem;
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.35rem 1.4rem;
+    cursor: pointer;
+  }
+}
+
+:host ::ng-deep {
+  .mcf-input {
+    padding-bottom: 0;
+  }
+
+  .mcf-input-wrapper input {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background: #fffefe;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75rem;
+    border: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 4rem;
+    min-width: 400px;
+    flex: 3 0 250px;
+
+    @include col-bp-sm-max {
+      min-width: 200px;
+    }
+  }
+}

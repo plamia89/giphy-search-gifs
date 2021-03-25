@@ -1,0 +1,17 @@
+<div class="gif-content-header">
+  <h1 class="gif-search-bar-title">Gif Search</h1>
+  <div class="search-gif-input-container">
+    <mcf-input id="searchGifInput"
+               [placeholder]="'What are you looking for?'"
+               [(ngModel)]="searchItem"
+               >
+    </mcf-input>
+      <select disabled name="gifs" class="show-all-options">
+        <option value="Show All">Show All</option>
+      </select>
+      <button class="search-button" type="button" (click)="searchGif()"><i class="fa fa-search"></i></button>
+  </div>
+
+  <h4 class="large-text-header">You can search any gif with our search</h4>
+  <div class="small-text-header">Everything you need for your creative projects, websites, banners, presentations, magazines and advertising</div>
+</div>

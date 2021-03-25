@@ -1,0 +1,27 @@
+$col-sm-min: 48em;
+$col-md-min: 64em;
+$col-lg-min: 75em;
+
+@mixin col-bp-sm-min {
+  @media (min-width: $col-sm-min) {
+    @content;
+  }
+}
+
+@mixin col-bp-sm-max {
+  @media (max-width: $col-sm-min) {
+    @content;
+  }
+}
+
+@mixin col-bp-md-min {
+  @media (min-width: $col-md-min) {
+    @content;
+  }
+}
+
+@mixin col-bp-lg-min {
+  @media (min-width: $col-lg-min) {
+    @content;
+  }
+}

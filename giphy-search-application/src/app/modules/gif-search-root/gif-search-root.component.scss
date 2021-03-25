@@ -1,0 +1,21 @@
+@import "src/styles/_variables";
+
+.gif-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .gif-search-header-container {
+    background: $header_color;
+    flex: 0 0 100%;
+    min-height: 30%;
+    max-height: fit-content;
+  }
+  .gif-items-result-container {
+    background: $results_background;
+    flex: 0 0 100%;
+    height: 70%;
+    padding: 5rem 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

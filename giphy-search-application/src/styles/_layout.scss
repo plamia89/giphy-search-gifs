@@ -1,0 +1,13 @@
+.body-container {
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    .gif-search {
+        flex: 0 0 100%;
+        height: 75%;
+    }
+    .gif-search-footer {
+        flex: 0 0 100%;
+        height: 25%;
+    }
+}

@@ -1,0 +1,22 @@
+
+<div class="gif-items-result-content"> 
+   <div class="images-container" *ngIf="giphyImages.length > 0">
+      <div *ngFor="let image of giphyImages" class="image-div">
+        <img src="{{image}}" (click)="onImageClick(image)">
+      </div>
+    </div>
+  <div *ngIf="giphyImages.length == 0" class="text-center no-images-div">
+      {{msgNoResults}}
+  </div>
+</div>
+
+<mcf-modal 
+    #mcfModalImage
+    [openAnimation]="'fadeIn'"
+    [transclude]="true"
+    [closeAnimation]="'fadeOut'"
+    isfootervisible="true"
+    cancellabel="Close"
+>
+  <img src="{{giphyImageModal}}">
+</mcf-modal>
